@@ -90,5 +90,81 @@
         {
             Console.WriteLine($"{carro.Key} - {carro.Value}");
         }
+
+        Console.WriteLine(); // Pula linha em branco
+        Console.WriteLine("=============================================");
+        Console.WriteLine(); // Pula linha em branco
+
+        // Trabalhando com fila
+        // Criar um fila (Queue)
+        Queue<string> filaBanco = new Queue<string>();
+
+        // Adicionar elementos em uma fila
+        filaBanco.Enqueue("André");
+        filaBanco.Enqueue("João");
+        filaBanco.Enqueue("Maria");
+        filaBanco.Enqueue("Bia");
+
+        foreach (var pessoa in filaBanco)
+        {
+            Console.WriteLine(pessoa);
+        }
+        // retirar o primeiro elemento de uma fila
+        filaBanco.Dequeue();
+
+        Console.WriteLine(); // Pula linha em branco
+        Console.WriteLine("=============================================");
+        Console.WriteLine(); // Pula linha em branco
+        foreach (var pessoa in filaBanco)
+        {
+            Console.WriteLine(pessoa);
+        }
+
+        // Verificar se existe um elemento na fila
+
+        bool achou = filaBanco.Contains("Bia");
+
+        if (achou)
+        {
+            Console.WriteLine("A pessoa está na fila!");
+        }
+        else
+        {
+            Console.WriteLine("A pessoa não está na fila!");
+        }
+
+        Console.WriteLine(); // Pula linha em branco
+        Console.WriteLine("=============================================");
+        Console.WriteLine(); // Pula linha em branco
+
+        // Trabalhando com pilha (Stack)
+        // Criando uma pilha
+        Stack<string> livros = new Stack<string>();
+
+        // Adicionar elementos em uma pilha
+        livros.Push("Chapeuzinho Vermelho");
+        livros.Push("Branca de Neve e os Sete Anões");
+        livros.Push("Princesa e o Sapo");
+
+        foreach (var livro in livros)
+        {
+            Console.WriteLine(livro);
+        }
+        Console.WriteLine(); // Pula linha em branco
+        Console.WriteLine("=============================================");
+        Console.WriteLine(); // Pula linha em branco
+
+        // Remove o primeiro elemento da pilha
+        livros.Pop();
+        foreach (var livro in livros)
+        {
+            Console.WriteLine(livro);
+        }
+        Console.WriteLine(); // Pula linha em branco
+        Console.WriteLine("=============================================");
+        Console.WriteLine(); // Pula linha em branco
     }
+
+
+
 }
