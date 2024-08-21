@@ -39,7 +39,6 @@
         //{
         //    Console.WriteLine(fruta);
         //}
-
         frutas.ForEach(Console.WriteLine);
         Console.WriteLine();
         // Alterar um elemento no índice específico
